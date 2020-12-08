@@ -2,7 +2,7 @@ package ca.sheridancollege.project;
 
 /**
  * Enum class to define Suits of Cards
- * @author JAhmadBustani
+ * @author AhmadBustani
  * @modifier JaykumarChaudhari
  * @modifier ElmerAlmeida
  * @modifier JeremiahTorralba
