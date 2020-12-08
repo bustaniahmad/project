@@ -8,26 +8,23 @@ package ca.sheridancollege.project;
  * @modifier JeremiahTorralba
  */
 
-public class WarPlayer extends Player {
-    // Data members
-    private boolean hasPlayed;
+public class WarPlayer extends Player{
+    //data members
+    private boolean hasPlayed = false;
     private int score = 0;
     private Card card;
-    private String nName = "";
-   
-    public WarPlayer(boolean hasPlayed, int score, Card card, String nName) {
-        this.hasPlayed = false;
-        this.score = 0;
-        this.card = null;
-        this.nName = nName;
+    
+    //constructor
+    public WarPlayer(String nName) {
+        super(nName);
     }
     
-    // Check if player has played
+    //check if player has played
     public boolean hasPlayed() {
         return hasPlayed;
     }
     
-    // Set if player has played
+    //set if player has playd
     public void setPlayed(boolean played) {
         hasPlayed = played;
     }
@@ -47,19 +44,4 @@ public class WarPlayer extends Player {
     public void setCard(Card nCard) {
         card = nCard;
     }
-    
-    /**
-     * @return the player name
-     */
-    public String getName() {
-        return nName;
-    }
-
-    /**
-     * @param nName the player name to set
-     */
-    public void setName(String nName) {
-        this.nName = nName;
-    }
-
 }
